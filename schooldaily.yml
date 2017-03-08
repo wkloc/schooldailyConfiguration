@@ -1,5 +1,4 @@
-info:
-    foo: bar
+mymessage: Message from server
 
 server:
   port: 8443
