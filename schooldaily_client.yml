@@ -1,0 +1,13 @@
+server:
+  contextPath: /client/
+  port: 8445
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: pgssoft
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+
+clientID: schooldaily_client
+clientSecret: secret
+accessTokenUri: https://localhost:8443/oauth/token
+userAuthorizationUri: https://localhost:8443/oauth/authorize
