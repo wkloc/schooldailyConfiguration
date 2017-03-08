@@ -1,4 +1,4 @@
-mymessage: Message from server refreshed live - @RefreshScope
+mymessage: Message from server refreshed live - @RefreshScope annotation
 
 server:
   port: 8443
