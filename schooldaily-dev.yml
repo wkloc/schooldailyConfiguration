@@ -12,7 +12,8 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:15432/schooldaily
     username: pgsuser
-    password: pgspass
+    password: '{cipher}AQBms1YytxwcLjF7sPoRXzEamvn8vI4lqe3xRRudMLgU+yE0qQDb0l471Lgnh5AhboCSSk7PFH94lA8p+zHiJcum4wHhqq6GOiQgK1OkWp6Cit6xADEdmJw0YyalK/GjUUs1m4qtJZfSD0m/0U8AF0acZrSZl5fmEaezGt/pFo7Jusa7lmCAJE8QiL7ZqWFRjo48c1c6FevmdamcTS+GE/5B6yD4PAwiZCytZRD4ZfiN3a9AphmTSaC7hOP5RSv2Juvg+cT9L4+gIZWJZYY4PGAWs220cQwGasIxPEr6wkkfiKWmZCM42TVz6xaUkTKMoVz1WpNscYyc4+WOOruvktdPbWgmMoZWlZzN2rrhwUdFfV/PxKPZLj0VNzhdfh5bQis='
+    #password: pgspass
   jpa:
     hibernate:
       ddl-auto: validate
