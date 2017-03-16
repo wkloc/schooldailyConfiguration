@@ -3,12 +3,14 @@ server:
   port: 8445
   ssl:
     key-store: classpath:keystore.p12
-    key-store-password: pgssoft
+    key-store-password: '{cipher}AQCNoXVgLnOr+TIjOQR4837ArxhpnRNEpr31HtZ5GD+X3+IpLjzbOEX6GjPMYEuPENWKDkYck7824yg8aYWNQOA7IyTC7Sysx9DLUlOJfwzLSBiuIn6yoq/L+tPorR46nBNH5Ahir+uxd3EN0+7kFGYcUxpINlrbtnl3VdGRJdqyI9NfyTzYnhxyRmUHV2C+h22QOBXtjQaC5QM9DQEgkGy2hWpcupal79annugnDu9J+5nc85u19xxkLVNPHIzWeny4MlmeFXtvTc8H1zUgtFQn41P097G0tvjdk3Z8FReVkAwRjtXciE3DRpG9O/pzv3isyf3OFto+S2IqEK8Ya1AV6HSI+Io08ZNYGv9cEwGR8HjipOTpExiUHY7bXNibVS4='
+    #_key-store-password: pgssoft
     keyStoreType: PKCS12
     keyAlias: tomcat
 
 clientID: schooldaily_client
-clientSecret: secret
+clientSecret: '{cipher}AQBTMEDfqDFv9IbQk1T2lkdKDaL64UoTmL4hR3B6rBl7+iiV67YSNpdfgX/C1mGsT4BPrw+oR7izEBhqbKNsUIG+bxwyCmylJhBxo5WiEdQPnpXWILjLkKlTjYaHGi0o+erH10dPenXNI/zeFU3LKygsDblXlUC5qiLnPLBepgAUovpFd9aJR67xMai/rieauvHcgcPdla7mqKWUfbwfGl3BXQBhQPhAnWpB4mhUTmu+CSbI3/j7fDkdJbXOMv8oS3oCXJ32Cit5hMQUdQ0AJZJ2pzcOHpt47gmg9ezWR3kkjlRkwYQl8zMZxKckvd6z3dIjp1F6ebhEgXpPmnMl3hjwpcZ1ir0rpds+YAs4Ok4Xq7jJPXb8lttM1cu5RgJFYGI='
+#_clientSecret: secret
 accessTokenUri: https://localhost:8441/oauth/token
 userAuthorizationUri: https://localhost:8441/oauth/authorize
 
