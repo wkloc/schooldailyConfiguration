@@ -11,3 +11,7 @@ clientID: schooldaily_client
 clientSecret: secret
 accessTokenUri: https://localhost:8441/oauth/token
 userAuthorizationUri: https://localhost:8441/oauth/authorize
+
+schooldaily.server.url: https://localhost:8441
+    
+        
