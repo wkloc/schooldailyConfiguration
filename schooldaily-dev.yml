@@ -36,8 +36,7 @@ custom:
       tokenName: oauth_token
       authenticationScheme: query
       clientAuthenticationScheme: form
-      scope:
-        - publish_actions
+      scope: publish_actions
     resource:
       userInfoUri: https://graph.facebook.com/me
 
