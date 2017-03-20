@@ -49,8 +49,7 @@ custom:
       accessTokenUri: https://github.com/login/oauth/access_token
       userAuthorizationUri: https://github.com/login/oauth/authorize
       clientAuthenticationScheme: form
-      scope:
-        - user:email
+      scope: user:email
     resource:
       userInfoUri: https://api.github.com/user
   
@@ -63,9 +62,7 @@ custom:
       accessTokenUri: https://www.googleapis.com/oauth2/v4/token
       userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
       clientAuthenticationScheme: form
-      scope:
-        - email
-        - profile
+      scope: email, profile
     resource:
       userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
       preferTokenInfo: true

@@ -1,71 +1,68 @@
-mymessage: Message from PROD server
+custom:
+  message: Message from PROD server
 
-server:
-  port: 8441
-  ssl:
-    key-store: classpath:keystore.p12
-    key-store-password: '{cipher}AQCNoXVgLnOr+TIjOQR4837ArxhpnRNEpr31HtZ5GD+X3+IpLjzbOEX6GjPMYEuPENWKDkYck7824yg8aYWNQOA7IyTC7Sysx9DLUlOJfwzLSBiuIn6yoq/L+tPorR46nBNH5Ahir+uxd3EN0+7kFGYcUxpINlrbtnl3VdGRJdqyI9NfyTzYnhxyRmUHV2C+h22QOBXtjQaC5QM9DQEgkGy2hWpcupal79annugnDu9J+5nc85u19xxkLVNPHIzWeny4MlmeFXtvTc8H1zUgtFQn41P097G0tvjdk3Z8FReVkAwRjtXciE3DRpG9O/pzv3isyf3OFto+S2IqEK8Ya1AV6HSI+Io08ZNYGv9cEwGR8HjipOTpExiUHY7bXNibVS4='
-    #_key-store-password: pgssoft
-    keyStoreType: PKCS12
-    keyAlias: tomcat
+  server:
+    port: 8441
+    ssl:
+      key-store: classpath:keystore.p12
+      key-store-password: '{cipher}AQCNoXVgLnOr+TIjOQR4837ArxhpnRNEpr31HtZ5GD+X3+IpLjzbOEX6GjPMYEuPENWKDkYck7824yg8aYWNQOA7IyTC7Sysx9DLUlOJfwzLSBiuIn6yoq/L+tPorR46nBNH5Ahir+uxd3EN0+7kFGYcUxpINlrbtnl3VdGRJdqyI9NfyTzYnhxyRmUHV2C+h22QOBXtjQaC5QM9DQEgkGy2hWpcupal79annugnDu9J+5nc85u19xxkLVNPHIzWeny4MlmeFXtvTc8H1zUgtFQn41P097G0tvjdk3Z8FReVkAwRjtXciE3DRpG9O/pzv3isyf3OFto+S2IqEK8Ya1AV6HSI+Io08ZNYGv9cEwGR8HjipOTpExiUHY7bXNibVS4='
+      #_key-store-password: pgssoft
+      keyStoreType: PKCS12
+      keyAlias: tomcat
 
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:15432/schooldaily
-    username: pgsuser
-    password: '{cipher}AQBms1YytxwcLjF7sPoRXzEamvn8vI4lqe3xRRudMLgU+yE0qQDb0l471Lgnh5AhboCSSk7PFH94lA8p+zHiJcum4wHhqq6GOiQgK1OkWp6Cit6xADEdmJw0YyalK/GjUUs1m4qtJZfSD0m/0U8AF0acZrSZl5fmEaezGt/pFo7Jusa7lmCAJE8QiL7ZqWFRjo48c1c6FevmdamcTS+GE/5B6yD4PAwiZCytZRD4ZfiN3a9AphmTSaC7hOP5RSv2Juvg+cT9L4+gIZWJZYY4PGAWs220cQwGasIxPEr6wkkfiKWmZCM42TVz6xaUkTKMoVz1WpNscYyc4+WOOruvktdPbWgmMoZWlZzN2rrhwUdFfV/PxKPZLj0VNzhdfh5bQis='
-    #_password: pgspass
-  jpa:
-    hibernate:
-      ddl-auto: validate
-    show_sql: true
+  spring:
+    datasource:
+      url: jdbc:postgresql://localhost:15432/schooldaily
+      username: pgsuser
+      password: '{cipher}AQBms1YytxwcLjF7sPoRXzEamvn8vI4lqe3xRRudMLgU+yE0qQDb0l471Lgnh5AhboCSSk7PFH94lA8p+zHiJcum4wHhqq6GOiQgK1OkWp6Cit6xADEdmJw0YyalK/GjUUs1m4qtJZfSD0m/0U8AF0acZrSZl5fmEaezGt/pFo7Jusa7lmCAJE8QiL7ZqWFRjo48c1c6FevmdamcTS+GE/5B6yD4PAwiZCytZRD4ZfiN3a9AphmTSaC7hOP5RSv2Juvg+cT9L4+gIZWJZYY4PGAWs220cQwGasIxPEr6wkkfiKWmZCM42TVz6xaUkTKMoVz1WpNscYyc4+WOOruvktdPbWgmMoZWlZzN2rrhwUdFfV/PxKPZLj0VNzhdfh5bQis='
+      #_password: pgspass
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      show_sql: true
 
-logging.level.org.springframework: DEBUG
+  logging.level.org.springframework: DEBUG
 
-###social media###
+  ###social media###
 
-#schooldaily2017@gmail.com/pgsadmin2017x2
-facebook:
-  client:
-    clientId: 223400851399755
-    clientSecret: '{cipher}AQB0+0UCCEVlUYfq5XH6Flqh8y6rw6HIIWwLgaZa8nzma/THYq01fo10jGsG6AEhEkfwBCF4wsKV8FqUzx3Ya7sKAg6Gl+Wyw+4zVMLky+0c1j3GmustiX5SVrULnUpbn15Jc+76mrHWGJlvqhi4qVFXAXFMHVpwHSRp/0yv7lQ87g8nvhzP27Id26YNJUBr193kUxDvCGdiA7k4F8yP/1uA+JEveLJIVKlr1h0wUdHt3MjppOFbsUNDLKgFvZUc9ohaqysbljG+mmITCe1MQcounwDlOg/GNkbZmeWlif5L+2DyVWB3HseZX69UO/vIWz24gn1nAuxve5U8CBF7fdL7CFpUxWYp61vXYvit2Rmydm2t9Uu7qKVI3OGV9gkNlORR+FZXs//Fr22dvycjeVe9z+AnDSOWIzGtQoGdQOamIw=='
-    #_clientSecret: 56588c70987a1dd0d4815367571a2469
-    accessTokenUri: https://graph.facebook.com/oauth/access_token
-    userAuthorizationUri: https://www.facebook.com/dialog/oauth
-    tokenName: oauth_token
-    authenticationScheme: query
-    clientAuthenticationScheme: form
-    scope:
-      - publish_actions
-  resource:
-    userInfoUri: https://graph.facebook.com/me
+  #schooldaily2017@gmail.com/pgsadmin2017x2
+  facebook:
+    client:
+      clientId: 223400851399755
+      clientSecret: '{cipher}AQB0+0UCCEVlUYfq5XH6Flqh8y6rw6HIIWwLgaZa8nzma/THYq01fo10jGsG6AEhEkfwBCF4wsKV8FqUzx3Ya7sKAg6Gl+Wyw+4zVMLky+0c1j3GmustiX5SVrULnUpbn15Jc+76mrHWGJlvqhi4qVFXAXFMHVpwHSRp/0yv7lQ87g8nvhzP27Id26YNJUBr193kUxDvCGdiA7k4F8yP/1uA+JEveLJIVKlr1h0wUdHt3MjppOFbsUNDLKgFvZUc9ohaqysbljG+mmITCe1MQcounwDlOg/GNkbZmeWlif5L+2DyVWB3HseZX69UO/vIWz24gn1nAuxve5U8CBF7fdL7CFpUxWYp61vXYvit2Rmydm2t9Uu7qKVI3OGV9gkNlORR+FZXs//Fr22dvycjeVe9z+AnDSOWIzGtQoGdQOamIw=='
+      #_clientSecret: 56588c70987a1dd0d4815367571a2469
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+      scope: publish_actions
+    resource:
+      userInfoUri: https://graph.facebook.com/me
 
-#schooldaily2017@gmail.com/pgsadmin2017x2
-github:
-  client:
-    clientId: 5fb1c9a2e16826c0a73b
-    clientSecret: '{cipher}AQA7BDk9skotHr6s3lDmv5TeSbrufihoJQ2k3Hkp+uzXF/TxjaQZQEYEayeGWt/OQaJ+98ykoFJmbTqq/iNW2iF/i2O62X97vIT7I9AP0sHs7XcnoEyS0+TM/d/ajP6ckiN6kUmvmIKkKODrT8U5dY+gu5dom0jHaG3umKh4mhm3OJ5bZGI5AeCefms3pfUy334dzNzN5lJwDqYdbgh3Up9KHH4Gbz93Pxolx0+zYGTpmlYA5NJY61XfmuiXCdnSBViux3TiP0RUWbIR13stgOj4Sa/3TYCOX+dy9HGbn6kkgh5VgvHjkPGtjSYTwMqyQlb9hkZxaCReiauo3iIrFPmtULgMJAMLIIFUXhd5TwE/yqx1UWkN599/5Wa61lChW/20FLV3OCGCmDc/lA4eN4TIY84xRJZ5ZDf79TEbDhW+8Q=='
-    #_clientSecret: 08c043e884293474f11389bc66445a965ac71735
-    accessTokenUri: https://github.com/login/oauth/access_token
-    userAuthorizationUri: https://github.com/login/oauth/authorize
-    clientAuthenticationScheme: form
-    scope:
-      - user:email
-  resource:
-    userInfoUri: https://api.github.com/user
+  #schooldaily2017@gmail.com/pgsadmin2017x2
+  github:
+    client:
+      clientId: 5fb1c9a2e16826c0a73b
+      clientSecret: '{cipher}AQA7BDk9skotHr6s3lDmv5TeSbrufihoJQ2k3Hkp+uzXF/TxjaQZQEYEayeGWt/OQaJ+98ykoFJmbTqq/iNW2iF/i2O62X97vIT7I9AP0sHs7XcnoEyS0+TM/d/ajP6ckiN6kUmvmIKkKODrT8U5dY+gu5dom0jHaG3umKh4mhm3OJ5bZGI5AeCefms3pfUy334dzNzN5lJwDqYdbgh3Up9KHH4Gbz93Pxolx0+zYGTpmlYA5NJY61XfmuiXCdnSBViux3TiP0RUWbIR13stgOj4Sa/3TYCOX+dy9HGbn6kkgh5VgvHjkPGtjSYTwMqyQlb9hkZxaCReiauo3iIrFPmtULgMJAMLIIFUXhd5TwE/yqx1UWkN599/5Wa61lChW/20FLV3OCGCmDc/lA4eN4TIY84xRJZ5ZDf79TEbDhW+8Q=='
+      #_clientSecret: 08c043e884293474f11389bc66445a965ac71735
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+      scope: user:email
+    resource:
+      userInfoUri: https://api.github.com/user
 
-#schooldaily2017@gmail.com/pgsadmin2017x2
-google:
-  client:
-    clientId: 978955442750-toei3c6ngd3iid1u07j8as8gfb6kinmk.apps.googleusercontent.com
-    clientSecret: '{cipher}AQBJxJ6Bg4P/xKnUqFM7T63P6BHc43HE/i1b3wIV8k3W918xrBK+0S4wfo6Gw4cbyudxl6jaTeLaQowQhVB0X9t8LDMDmZTRjf0y4OjyB72uiKI8LPptWL5N4IJo7SVE46fDq8lUAZQS3EMd0Bit/ra9rPuKg+hzRO7lwESEpi27M0GYJhLaJQb8Wzh+o944toTPFKcKymf6/UPRp+p4diDfZZi/d0LHjV7caIMNaeFucM6QQhMOVc9ihG1516OfDRZEvdj41DhrLI/7NIqriqVu+ujO/5/yNki6QpGlfyhJQfEHyV5Fieos0QEq/jVwFAgYXXFjt+L+c1PDrUNjr2JZSBPyu//ypRyD03h0cOUyEcERFrlx3KosyL3ISK8rHBrAjwLCMYua4m8gUzR0q56E'
-    #_clientSecret: SMgoi4tn9G_9B0WjHfoMVrOL
-    accessTokenUri: https://www.googleapis.com/oauth2/v4/token
-    userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
-    clientAuthenticationScheme: form
-    scope:
-      - email
-      - profile
-  resource:
-    userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
-    preferTokenInfo: true
+  #schooldaily2017@gmail.com/pgsadmin2017x2
+  google:
+    client:
+      clientId: 978955442750-toei3c6ngd3iid1u07j8as8gfb6kinmk.apps.googleusercontent.com
+      clientSecret: '{cipher}AQBJxJ6Bg4P/xKnUqFM7T63P6BHc43HE/i1b3wIV8k3W918xrBK+0S4wfo6Gw4cbyudxl6jaTeLaQowQhVB0X9t8LDMDmZTRjf0y4OjyB72uiKI8LPptWL5N4IJo7SVE46fDq8lUAZQS3EMd0Bit/ra9rPuKg+hzRO7lwESEpi27M0GYJhLaJQb8Wzh+o944toTPFKcKymf6/UPRp+p4diDfZZi/d0LHjV7caIMNaeFucM6QQhMOVc9ihG1516OfDRZEvdj41DhrLI/7NIqriqVu+ujO/5/yNki6QpGlfyhJQfEHyV5Fieos0QEq/jVwFAgYXXFjt+L+c1PDrUNjr2JZSBPyu//ypRyD03h0cOUyEcERFrlx3KosyL3ISK8rHBrAjwLCMYua4m8gUzR0q56E'
+      #_clientSecret: SMgoi4tn9G_9B0WjHfoMVrOL
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      clientAuthenticationScheme: form
+      scope: email, profile
+    resource:
+      userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+      preferTokenInfo: true
