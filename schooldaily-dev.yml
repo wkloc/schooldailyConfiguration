@@ -1,6 +1,6 @@
-mymessage: Message from DEV server
-
 custom:
+  message: Message from DEV server
+  
   server:
     port: 8443
     ssl:
