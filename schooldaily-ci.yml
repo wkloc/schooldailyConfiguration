@@ -21,6 +21,8 @@ custom:
         ddl-auto: validate
       show_sql: true
 
+  flyway:
+    ebnabled: false
   logging.level.org.springframework: DEBUG
 
   ###social media###
