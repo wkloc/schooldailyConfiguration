@@ -22,7 +22,7 @@ custom:
       show_sql: true
 
   flyway:
-    ebnabled: true
+    enabled: true
 
   logging.level.org.springframework: DEBUG
 

@@ -22,7 +22,8 @@ custom:
       show_sql: true
 
   flyway:
-    ebnabled: false
+    enabled: false
+
   logging.level.org.springframework: DEBUG
 
   ###social media###
