@@ -2,7 +2,7 @@ custom:
   message: Message from TEST server
   
   server:
-    port: 8443
+    port: 8442
     ssl:
       key-store: classpath:keystore.p12
       key-store-password: '{cipher}AQCNoXVgLnOr+TIjOQR4837ArxhpnRNEpr31HtZ5GD+X3+IpLjzbOEX6GjPMYEuPENWKDkYck7824yg8aYWNQOA7IyTC7Sysx9DLUlOJfwzLSBiuIn6yoq/L+tPorR46nBNH5Ahir+uxd3EN0+7kFGYcUxpINlrbtnl3VdGRJdqyI9NfyTzYnhxyRmUHV2C+h22QOBXtjQaC5QM9DQEgkGy2hWpcupal79annugnDu9J+5nc85u19xxkLVNPHIzWeny4MlmeFXtvTc8H1zUgtFQn41P097G0tvjdk3Z8FReVkAwRjtXciE3DRpG9O/pzv3isyf3OFto+S2IqEK8Ya1AV6HSI+Io08ZNYGv9cEwGR8HjipOTpExiUHY7bXNibVS4='
@@ -20,6 +20,9 @@ custom:
       hibernate:
         ddl-auto: validate
       show_sql: true
+      
+  flyway:
+    enabled: true
 
   logging.level.org.springframework: INFO
 
