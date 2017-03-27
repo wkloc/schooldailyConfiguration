@@ -1,4 +1,4 @@
-custom:
+work:
   message: Message from PROD server
 
   server:
@@ -69,3 +69,44 @@ custom:
     resource:
       userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
       preferTokenInfo: true
+
+test:
+  message: Message from PROD TEST server
+
+  server:
+    protocol: https
+    domain: localhost
+    port: 8442
+    ssl:
+      key-store: classpath:keystore.p12
+      key-store-password: '{cipher}AQCNoXVgLnOr+TIjOQR4837ArxhpnRNEpr31HtZ5GD+X3+IpLjzbOEX6GjPMYEuPENWKDkYck7824yg8aYWNQOA7IyTC7Sysx9DLUlOJfwzLSBiuIn6yoq/L+tPorR46nBNH5Ahir+uxd3EN0+7kFGYcUxpINlrbtnl3VdGRJdqyI9NfyTzYnhxyRmUHV2C+h22QOBXtjQaC5QM9DQEgkGy2hWpcupal79annugnDu9J+5nc85u19xxkLVNPHIzWeny4MlmeFXtvTc8H1zUgtFQn41P097G0tvjdk3Z8FReVkAwRjtXciE3DRpG9O/pzv3isyf3OFto+S2IqEK8Ya1AV6HSI+Io08ZNYGv9cEwGR8HjipOTpExiUHY7bXNibVS4='
+      #_key-store-password: pgssoft
+      keyStoreType: PKCS12
+      keyAlias: tomcat
+
+  spring:
+    datasource:
+      url: jdbc:postgresql://localhost:5432/schooldaily
+      username: postgres
+      password: '{cipher}AQAQOSlhcuILXpfG6130Jbe+mq1TrWS9nxARtb2P7syTaVZZD6NW8oJMWzbRsxJ/3+ZaKiUZXd00oU7WWBs7jhccczSxhb/GL3gXjYyBXpT2PBAW9cvK+g/SAhGbRFhXNhHrq/AqjkTYCDJsC0nAqWs4V7iEOG9ucZItGu023qUHAZt93e1sYz8hp7nl4C5i/HDE/Vfht6aUYXhG0CsiXEuPULOM9Qx0uuc1DuZiZ4/YKxSwCkkA8I/+vMKFe9sFaIKBpMntvFN6MWuXKisIrf1Ap5wMMntmKKEex+Rtac821yht5JwqO0lLcCniiTV/B9Ff8w4pMun7D/aJkdnyV6p4KG1Pi120V2BiJIfNx3Zz29R0dHkCZylEL3KBrzrnIRY='
+      #_password: admin
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      show_sql: true
+
+  flyway:
+    enabled: true
+
+  logging.level.org.springframework: INFO
+
+  oauth2:
+    access:
+      user: user
+      password: '{cipher}AQAQOSlhcuILXpfG6130Jbe+mq1TrWS9nxARtb2P7syTaVZZD6NW8oJMWzbRsxJ/3+ZaKiUZXd00oU7WWBs7jhccczSxhb/GL3gXjYyBXpT2PBAW9cvK+g/SAhGbRFhXNhHrq/AqjkTYCDJsC0nAqWs4V7iEOG9ucZItGu023qUHAZt93e1sYz8hp7nl4C5i/HDE/Vfht6aUYXhG0CsiXEuPULOM9Qx0uuc1DuZiZ4/YKxSwCkkA8I/+vMKFe9sFaIKBpMntvFN6MWuXKisIrf1Ap5wMMntmKKEex+Rtac821yht5JwqO0lLcCniiTV/B9Ff8w4pMun7D/aJkdnyV6p4KG1Pi120V2BiJIfNx3Zz29R0dHkCZylEL3KBrzrnIRY='
+      #_password: admin
+      clientID: schooldaily_client
+      clientSecret: '{cipher}AQBTMEDfqDFv9IbQk1T2lkdKDaL64UoTmL4hR3B6rBl7+iiV67YSNpdfgX/C1mGsT4BPrw+oR7izEBhqbKNsUIG+bxwyCmylJhBxo5WiEdQPnpXWILjLkKlTjYaHGi0o+erH10dPenXNI/zeFU3LKygsDblXlUC5qiLnPLBepgAUovpFd9aJR67xMai/rieauvHcgcPdla7mqKWUfbwfGl3BXQBhQPhAnWpB4mhUTmu+CSbI3/j7fDkdJbXOMv8oS3oCXJ32Cit5hMQUdQ0AJZJ2pzcOHpt47gmg9ezWR3kkjlRkwYQl8zMZxKckvd6z3dIjp1F6ebhEgXpPmnMl3hjwpcZ1ir0rpds+YAs4Ok4Xq7jJPXb8lttM1cu5RgJFYGI='
+      #_clientSecret: secret
+      grantType: password
+      scope: read, write
