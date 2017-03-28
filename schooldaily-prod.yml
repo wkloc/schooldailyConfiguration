@@ -2,6 +2,8 @@ work:
   message: Message from PROD server
 
   server:
+    protocol: https
+    domain: localhost
     port: 8441
     ssl:
       key-store: classpath:keystore.p12
