@@ -88,10 +88,10 @@ test:
 
   spring:
     datasource:
-      url: jdbc:postgresql://localhost:5432/schooldaily
-      username: postgres
-      password: '{cipher}AQAQOSlhcuILXpfG6130Jbe+mq1TrWS9nxARtb2P7syTaVZZD6NW8oJMWzbRsxJ/3+ZaKiUZXd00oU7WWBs7jhccczSxhb/GL3gXjYyBXpT2PBAW9cvK+g/SAhGbRFhXNhHrq/AqjkTYCDJsC0nAqWs4V7iEOG9ucZItGu023qUHAZt93e1sYz8hp7nl4C5i/HDE/Vfht6aUYXhG0CsiXEuPULOM9Qx0uuc1DuZiZ4/YKxSwCkkA8I/+vMKFe9sFaIKBpMntvFN6MWuXKisIrf1Ap5wMMntmKKEex+Rtac821yht5JwqO0lLcCniiTV/B9Ff8w4pMun7D/aJkdnyV6p4KG1Pi120V2BiJIfNx3Zz29R0dHkCZylEL3KBrzrnIRY='
-      #_password: admin
+      url: jdbc:postgresql://localhost:15433/schooldaily
+      username: pgsuser
+      password: '{cipher}AQBms1YytxwcLjF7sPoRXzEamvn8vI4lqe3xRRudMLgU+yE0qQDb0l471Lgnh5AhboCSSk7PFH94lA8p+zHiJcum4wHhqq6GOiQgK1OkWp6Cit6xADEdmJw0YyalK/GjUUs1m4qtJZfSD0m/0U8AF0acZrSZl5fmEaezGt/pFo7Jusa7lmCAJE8QiL7ZqWFRjo48c1c6FevmdamcTS+GE/5B6yD4PAwiZCytZRD4ZfiN3a9AphmTSaC7hOP5RSv2Juvg+cT9L4+gIZWJZYY4PGAWs220cQwGasIxPEr6wkkfiKWmZCM42TVz6xaUkTKMoVz1WpNscYyc4+WOOruvktdPbWgmMoZWlZzN2rrhwUdFfV/PxKPZLj0VNzhdfh5bQis='
+      #_password: pgspass
     jpa:
       hibernate:
         ddl-auto: validate
