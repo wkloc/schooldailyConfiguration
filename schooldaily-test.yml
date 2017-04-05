@@ -2,6 +2,8 @@ schooldaily:
   message: Message from TEST server
   
   server:
+    protocol: http
+    domain: localhost
     port: 8442
     ssl:
       key-store: classpath:keystore.p12
