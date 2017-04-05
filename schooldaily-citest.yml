@@ -24,7 +24,7 @@ schooldaily:
       show_sql: true
       
   flyway:
-    enabled: true
+    enabled: false
     locations: filesystem:src/main/resources/db_migration
 
   logging.level.org.springframework: INFO
