@@ -2,7 +2,7 @@ work:
   message: Message from DEV server
   
   server:
-    protocol: https
+    protocol: http
     domain: localhost
     port: 8443
     ssl:
@@ -76,7 +76,7 @@ test:
   message: Message from TEST server
 
   server:
-    protocol: https
+    protocol: http
     domain: localhost
     port: 8442
     ssl:
